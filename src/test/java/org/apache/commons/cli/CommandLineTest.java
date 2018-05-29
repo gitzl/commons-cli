@@ -28,7 +28,7 @@ import org.junit.Test;
 @SuppressWarnings("deprecation") // tests some deprecated classes
 public class CommandLineTest
 {
-    @Test
+//    @Test
     public void testGetOptionProperties() throws Exception
     {
         final String[] args = new String[] { "-Dparam1=value1", "-Dparam2=value2", "-Dparam3", "-Dparam4=value4", "-D", "--property", "foo=bar" };
@@ -76,7 +76,7 @@ public class CommandLineTest
         assertEquals("property with long format", "bar", cl.getOptionProperties(option_property).getProperty("foo"));
     }
 
-    @Test
+//    @Test
     public void testGetOptions()
     {
         final CommandLine cmd = new CommandLine();
